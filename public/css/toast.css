@@ -1,0 +1,47 @@
+.toast {
+    min-width: 25vw;
+    max-width: 25vw;
+    transition: all linear 0.3s;
+}
+
+.toast--success {
+    border-color: rgba(110, 231, 183);
+}
+
+.toast--warning {
+    border-color: rgb(253 224 71);
+}
+
+.toast--error {
+    border-color: rgb(252 165 165);
+}
+
+.toast--success .toast__icon {
+    color: rgba(110, 231, 183);
+}
+
+.toast--warning .toast__icon {
+    color: rgb(253 224 71);
+}
+
+.toast--error .toast__icon {
+    color: rgb(252 165 165);
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 1.25rem));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
